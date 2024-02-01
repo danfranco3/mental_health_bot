@@ -1,0 +1,67 @@
+{
+    "strategies": [
+        {
+            "tag": "anxiety",
+            "coping_strategies": [
+                "deep breathing exercises",
+                "progressive muscle relaxation",
+                "mindfulness meditation",
+                "physical exercise",
+                "challenging negative thoughts",
+                "writing down worries",
+                "creating a calming environment",
+                "avoiding caffeine and alcohol",
+                "getting enough sleep",
+                "talking to a trusted friend or therapist"
+            ]
+        },
+        {
+            "tag": "depression",
+            "coping_strategies": [
+                "talking to a trusted friend or therapist",
+                "joining a support group",
+                "regular physical exercise",
+                "eating a healthy diet",
+                "getting enough sleep",
+                "practicing relaxation techniques",
+                "engaging in enjoyable activities",
+                "setting small achievable goals",
+                "challenging negative thoughts",
+                "focusing on positive self-talk"
+            ]
+        },
+        {
+            "tag": "panic_attacks",
+            "coping_strategies": [
+              "deep breathing exercises",
+              "relaxation techniques",
+              "grounding techniques",
+              "talking to a trusted friend or therapist",
+              "avoiding caffeine and alcohol",
+              "engaging in regular physical exercise",
+              "creating a calming environment",
+              "identifying and avoiding triggers",
+              "challenging negative thoughts",
+              "practicing self-compassion"
+            ]
+          },
+          {
+            "tag": "body_dysmorphia",
+            "coping_strategies": [
+              "practice self-care by taking care of your physical and emotional needs. This can include things like getting enough sleep, eating healthy foods, and engaging in physical activity that you enjoy.",
+              "try to challenge negative thoughts about your appearance by focusing on your positive qualities and achievements.",
+              "talk to a therapist or counselor who can help you work through your feelings and develop coping strategies.",
+              "join a support group for people with body dysmorphic disorder to connect with others who understand what you're going through."
+            ]
+          },
+          {
+            "tag": "loneliness",
+            "coping_strategies": [
+              "connect with others through social activities or hobbies that interest you.",
+              "try volunteering or joining a club or group that aligns with your interests.",
+              "practice self-care by engaging in activities that you enjoy and taking care of your physical and emotional needs.",
+              "consider talking to a therapist or counselor who can provide support and guidance for coping with loneliness."
+            ]
+          }        
+    ]
+}

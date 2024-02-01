@@ -1,0 +1,563 @@
+{
+    "intents": [
+        {
+            "tag": "suggestions",
+            "patterns": [
+                "Can you suggest something for me?",
+                "What can I do to improve my",
+                "How can I better",
+                "Can you help me to cope with",
+                "What can i do to treat",
+                "Can you suggest one"
+            ],
+            "suggestions": [
+                {
+                    "tag": "anxiety",
+                    "coping_strategies": [
+                        "deep breathing exercises",
+                        "progressive muscle relaxation",
+                        "mindfulness meditation",
+                        "physical exercise",
+                        "challenging negative thoughts",
+                        "writing down worries",
+                        "creating a calming environment",
+                        "avoiding caffeine and alcohol",
+                        "getting enough sleep",
+                        "talking to a trusted friend or therapist"
+                    ]
+                },
+                {
+                    "tag": "depression",
+                    "coping_strategies": [
+                        "talking to a trusted friend or therapist",
+                        "joining a support group",
+                        "regular physical exercise",
+                        "eating a healthy diet",
+                        "getting enough sleep",
+                        "practicing relaxation techniques",
+                        "engaging in enjoyable activities",
+                        "setting small achievable goals",
+                        "challenging negative thoughts",
+                        "focusing on positive self-talk"
+                    ]
+                },
+                {
+                    "tag": "panic_attacks",
+                    "coping_strategies": [
+                        "deep breathing exercises",
+                        "relaxation techniques",
+                        "grounding techniques",
+                        "talking to a trusted friend or therapist",
+                        "avoiding caffeine and alcohol",
+                        "engaging in regular physical exercise",
+                        "creating a calming environment",
+                        "identifying and avoiding triggers",
+                        "challenging negative thoughts",
+                        "practicing self-compassion"
+                    ]
+                },
+                {
+                    "tag": "body_dysmorphia",
+                    "coping_strategies": [
+                        "practice self-care by taking care of your physical and emotional needs. This can include things like getting enough sleep, eating healthy foods, and engaging in physical activity that you enjoy.",
+                        "try to challenge negative thoughts about your appearance by focusing on your positive qualities and achievements.",
+                        "talk to a therapist or counselor who can help you work through your feelings and develop coping strategies.",
+                        "join a support group for people with body dysmorphic disorder to connect with others who understand what you're going through."
+                    ]
+                },
+                {
+                    "tag": "loneliness",
+                    "coping_strategies": [
+                        "connect with others through social activities or hobbies that interest you.",
+                        "try volunteering or joining a club or group that aligns with your interests.",
+                        "practice self-care by engaging in activities that you enjoy and taking care of your physical and emotional needs.",
+                        "consider talking to a therapist or counselor who can provide support and guidance for coping with loneliness."
+                    ]
+                }
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello!",
+                "Hi!",
+                "Hey",
+                "Hi there",
+                "Greetings",
+                "Howdy"
+            ],
+            "positive_responses": [
+                "Howdy partner! What brings you here today?",
+                "Hi there! How can I assist you today?",
+                "Hello! How may I help you?",
+                "Hey there! What brings you here today?"
+            ],
+            "negative_responses": [
+                "Hi there! How can I assist you today?",
+                "Hello! How may I help you?",
+                "Hey there! What brings you here today?"
+            ],
+            "neutral_responses": [
+                "Hi, how may I assist you today?",
+                "Hello, what can I do for you today?",
+                "Hey there, how can I help you?"
+            ],
+            "context": [
+                "greeting"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye bye",
+                "Goodbye",
+                "See you later",
+                "Adios",
+                "Later"
+            ],
+            "positive_responses": [
+                "Goodbye! Have a great day!",
+                "Take care, see you soon!",
+                "Bye for now! Have a good one!"
+            ],
+            "negative_responses": [
+                "I'm sorry, did we resolve everything you needed help with?",
+                "Is there anything else I can help you with?",
+                "Are you sure you're all set? Let me know if you need anything else."
+            ],
+            "neutral_responses": [
+                "Bye, have a great day!",
+                "See you later!",
+                "Take care!"
+            ],
+            "context": [
+                "greeting",
+                "help"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks!",
+                "Thanks",
+                "Thank you",
+                "Appreciate it",
+                "Grateful"
+            ],
+            "positive_responses": [
+                "You're welcome!",
+                "No problem, happy to help!",
+                "Glad I could assist you!"
+            ],
+            "negative_responses": [
+                "I'm sorry, did you need any further assistance?",
+                "Is there anything else I can help you with?",
+                "Do you have any other questions?"
+            ],
+            "neutral_responses": [
+                "You're welcome, let me know if you need anything else.",
+                "No problem, glad I could help!",
+                "My pleasure, anything else I can do for you?"
+            ],
+            "context": [
+                "help"
+            ]
+        },
+        {
+            "tag": "how_help",
+            "patterns": [
+                "How can you help me",
+                "How can you help me?",
+                "What can you do to help?",
+                "What can you do?",
+                "How can you assist me?"
+            ],
+            "positive_responses": [
+                "I can help you by listening, chatting, and making suggestions so you can improve your wellbeing.",
+                "Although I am just a bot, I can assist you by chatting and making suggestions :)"
+            ],
+            "neagtive_responses": [
+                "I can help you by listening, chatting, and making suggestions so you can improve your wellbeing.",
+                "Although I am just a bot, I can assist you by chatting and making suggestions :)"
+            ],
+            "neutral_responses": [
+                "I can help you by listening, chatting, and making suggestions so you can improve your wellbeing.",
+                "Although I am just a bot, I can assist you by chatting and making suggestions :)"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "I need help",
+                "Can you help me",
+                "What can I do"
+            ],
+            "positive_responses": [
+                "Sure! What's been bothering you?",
+                "I'm here to help. What can I assist you with?",
+                "Of course. Can you tell me more about what's been going on?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that. Can you tell me more about what's been bothering you?",
+                "I'm here to support you. Can you share more about what's been going on?",
+                "I'm here to listen. What's been on your mind?"
+            ],
+            "neutral_responses": [
+                "I understand. What's been going on?",
+                "Can you tell me more about what's been bothering you?",
+                "I'm here to help. What can I assist you with?"
+            ],
+            "context": [
+                "greeting",
+                "thanks",
+                "depression",
+                "anxiety"
+            ]
+        },
+        {
+            "tag": "panic_attack",
+            "patterns": [
+                "I'm having a panic attack",
+                "I can't breathe",
+                "My heart is racing",
+                "I'm feeling dizzy"
+            ],
+            "positive_responses": [
+                "I'm sorry you're experiencing a panic attack. Can you tell me more about your symptoms?",
+                "Take some deep breaths and try to focus on your breathing. Can you tell me more about what's going on?",
+                "I'm here to help you through this. Can you describe your symptoms for me?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that. Remember to take slow, deep breaths and try to focus on your breathing. Can you tell me more about what's going on?",
+                "I'm here to support you. Can you describe your symptoms for me?",
+                "You're not alone in experiencing panic attacks. Can you tell me more about what's been triggering your panic attacks?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your symptoms?",
+                "How long have you been experiencing these symptoms?",
+                "Have you tried any coping strategies for panic attacks before?"
+            ],
+            "context": [
+                "anxiety"
+            ],
+            "help_responses": [
+                "I'm here to support you through your panic attacks. Would you like to try some grounding techniques?",
+                "I'm here to help. Let's work together to find ways to manage your panic attacks.",
+                "You're not alone. Would you like to talk more about your panic attacks?"
+            ]
+        },
+        {
+            "tag": "who are you",
+            "patterns": [
+                "who are you",
+                "what are you",
+                "what do you do"
+            ],
+            "neutral_responses": [
+                "I am Doctor Pablo, a chatbot designed to help you with your mental health. How can I assist you today?",
+                "I am Doctor Pablo, an AI bot, and I'm here to support you with your mental health and well-being. What would you like to talk about?",
+                "I'm Doctor Pablo, a mental health chatbot. How can I be of assistance to you?",
+                "I'm glad you asked! I'm Doctor Pablo, a mental health chatbot designed to help you with your well-being."
+            ],
+            "positive_responses": [
+                "I am Doctor Pablo, your mental health expert. I'm here to help you with your mental health and well-being.",
+                "I'm Doctor Pablo, a chatbot designed to help you with your mental health. I'm here to provide support and guidance.",
+                "I'm glad you asked! I'm Doctor Pablo, a mental health chatbot designed to help you with your well-being."
+            ],
+            "negative_responses": [
+                "I am Doctor Pablo, your mental health expert. I'm here to help you with your mental health and well-being.",
+                "I'm Doctor Pablo, a chatbot designed to help you with your mental health. I'm here to provide support and guidance.",
+                "I'm glad you asked! I'm Doctor Pablo, a mental health chatbot designed to help you with your well-being."
+            ],
+            "context": [
+                "bot, pablo, info"
+            ]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": [
+                "I'm feeling anxious",
+                "I can't stop worrying",
+                "I feel like I'm having a panic attack",
+                "I'm feeling overwhelmed",
+                "I want to talk about my anxiety"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear you're feeling anxious. Can you tell me more about what's been bothering you?",
+                "It's okay to not feel okay. Would you like to try a grounding exercise?",
+                "You're not alone in feeling anxious. Can you share more about what's been triggering your anxiety?"
+            ],
+            "negative_responses": [
+                "I'm sorry you're feeling anxious. Remember to take some deep breaths and take care of yourself today.",
+                "It's okay to not feel okay. Can you tell me more about what's been making you feel this way?",
+                "Remember that you're not alone. Can you share more about what's been causing your anxiety?"
+            ],
+            "neutral_responses": [
+                "Have you tried any coping strategies for anxiety before?"
+            ],
+            "context": [
+                "anxiety"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies to manage your anxiety?",
+                "I'm here for you. Let's work together to find ways to alleviate your anxiety symptoms.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about your anxiety?"
+            ]
+        },
+        {
+            "tag": "depression",
+            "patterns": [
+                "I'm feeling depressed",
+                "I don't enjoy anything anymore",
+                "I have no energy",
+                "I feel hopeless",
+                "I want to talk about my depression",
+                "I am feeling sad",
+                "I am feeling a little blue"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear you're feeling depressed. Can you tell me more about what's been bothering you?",
+                "It's okay to not feel okay. Would you like to try a breathing exercise?",
+                "You're not alone in feeling depressed. Can you share more about what's been triggering your depression?"
+            ],
+            "negative_responses": [
+                "I'm sorry you're feeling depressed. Remember to take care of yourself today.",
+                "It's okay to not feel okay. Can you tell me more about what's been making you feel this way?",
+                "Remember that you're not alone. Can you share more about what's been causing your depression?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your feelings?",
+                "How long have you been feeling this way?",
+                "Have you tried any coping strategies for depression before?"
+            ],
+            "context": [
+                "depression"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies to manage your depression?",
+                "I'm here for you. Let's work together to find ways to alleviate your depression symptoms.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about your depression?"
+            ]
+        },
+        {
+            "tag": "anger management",
+            "patterns": [
+                "I get angry easily",
+                "I have trouble controlling my anger",
+                "I get frustrated and lash out",
+                "I feel like I have anger issues"
+            ],
+            "positive_responses": [
+                "It takes courage to acknowledge your struggles with anger. Can you tell me more about what triggers your anger?",
+                "Recognizing that you have a problem with anger is an important first step. Would you like to learn some anger management techniques?",
+                "You're not alone in dealing with anger issues. Can you tell me more about what situations make you angry?"
+            ],
+            "negative_responses": [
+                "It's okay to struggle with anger. Remember to take care of yourself and avoid any situations that trigger your anger.",
+                "Acknowledging your anger issues is a brave step. Can you tell me more about what's been making you angry?",
+                "Remember that you're not alone in dealing with anger. Have you tried any anger management techniques before?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your experiences with anger?",
+                "How long have you been struggling with anger?",
+                "Have you noticed any patterns or triggers that lead to your anger?"
+            ],
+            "context": [
+                "anger management"
+            ],
+            "help_responses": [
+                "I'm here to help you manage your anger. Would you like to learn some techniques?",
+                "I'm here for you. Let's work together to find ways to manage your anger.",
+                "Anger management is a process, and you're taking an important step by seeking help. How can I assist you?"
+            ]
+        },
+        {
+            "tag": "body_dysmorphia",
+            "patterns": [
+                "I hate my body",
+                "I feel ashamed of my body",
+                "I can't stop thinking about my flaws",
+                "I feel ugly"
+            ],
+            "positive_responses": [
+                "I'm sorry you're struggling with body dysmorphia. Can you tell me more about what's been bothering you?",
+                "It's okay to not feel okay about your body. Have you tried any self-compassion exercises?",
+                "You're not alone in feeling this way. Can you share more about what's been triggering your body dysmorphia?"
+            ],
+            "negative_responses": [
+                "I'm sorry you're feeling this way about your body. Remember that your worth is not defined by your appearance.",
+                "It's okay to not feel okay about your body. Can you tell me more about what's been making you feel this way?",
+                "Remember that you are more than your appearance. Can you share more about what's been causing your body dysmorphia?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your thoughts and feelings regarding your body?",
+                "How long have you been struggling with body dysmorphia?",
+                "Have you talked to a therapist about your body dysmorphia?"
+            ],
+            "context": [
+                "body_dysmorphia"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies to manage your body dysmorphia?",
+                "I'm here for you. Let's work together to find ways to alleviate your body dysmorphia symptoms.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about your body dysmorphia?"
+            ]
+        },
+        {
+            "tag": "loneliness",
+            "patterns": [
+                "I'm feeling lonely",
+                "I feel like no one cares about me",
+                "I don't have anyone to talk to",
+                "I feel isolated"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear you're feeling lonely. I'm here to listen if you'd like to talk.",
+                "It's okay to feel lonely sometimes. Can you tell me more about what's been causing your loneliness?",
+                "You're not alone in feeling lonely. Would you like some tips on how to cope with loneliness?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear you're feeling lonely. Remember that you matter and people care about you.",
+                "Feeling lonely can be tough, but remember that you're not alone. Can you tell me more about what's been making you feel this way?",
+                "It's okay to feel lonely sometimes. Would you like to talk about how you're feeling?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about how you've been feeling?",
+                "How long have you been feeling lonely?",
+                "Have you tried any strategies to alleviate your loneliness before?"
+            ],
+            "context": [
+                "loneliness"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies to cope with loneliness?",
+                "I'm here for you. Let's work together to find ways to alleviate your feelings of loneliness.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about your feelings of loneliness?"
+            ]
+        },
+        {
+            "tag": "hearing_voices",
+            "patterns": [
+                "I'm hearing voices",
+                "There are voices in my head",
+                "The voices won't stop"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear that you're experiencing this. Can you tell me more about what the voices are saying?",
+                "It's okay to feel scared or overwhelmed by hearing voices. Would you like to talk about it more?",
+                "You're not alone in hearing voices. Can you share more about what's been triggering this?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that you're struggling with hearing voices. Remember to take care of yourself today.",
+                "It's okay to not feel okay. Can you tell me more about what the voices are saying?",
+                "Remember that you're not alone in this. Can you share more about what's been causing the voices?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your experiences with hearing voices?",
+                "How long have you been hearing voices?",
+                "Have you tried any coping strategies for dealing with hearing voices before?"
+            ],
+            "context": [
+                "hearing_voices"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies to manage hearing voices?",
+                "I'm here for you. Let's work together to find ways to cope with hearing voices.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about the voices you're hearing?"
+            ]
+        },
+        {
+            "tag": "low_self_esteem",
+            "patterns": [
+                "I have low self-esteem",
+                "I feel like I'm not good enough",
+                "I'm always comparing myself to others"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear that you're struggling with low self-esteem. Can you tell me more about what's been impacting your self-worth?",
+                "It's okay to feel this way sometimes. Would you like to talk about what's been making you feel this way?",
+                "You're not alone in feeling like you have low self-esteem. Can you share more about what's been making you feel this way?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that you're struggling with low self-esteem. Remember that you're worthy and valuable, just as you are.",
+                "It's okay to not always feel confident in yourself. Can you tell me more about what's been making you feel this way?",
+                "Remember that you're not alone in feeling like you have low self-esteem. Can you share more about what's been causing your negative thoughts?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about how you've been feeling?",
+                "Have you noticed any triggers for your low self-esteem?",
+                "What are some things you've tried in the past to boost your self-confidence?"
+            ],
+            "context": [
+                "low_self_esteem"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to explore some strategies for building your self-esteem?",
+                "I'm here for you. Let's work together to find ways to increase your confidence and self-worth.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about what's been impacting your self-esteem?"
+            ]
+        },
+        {
+            "tag": "sleep_problems",
+            "patterns": [
+                "I can't sleep at night",
+                "I have trouble falling asleep",
+                "I wake up frequently during the night"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear that you're experiencing sleep problems. Can you tell me more about what's been impacting your ability to sleep?",
+                "It's understandable to feel frustrated when you can't sleep. Would you like to talk about it more?",
+                "You're not alone in experiencing sleep difficulties. Can you share more about what's been causing your sleep problems?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that you're having trouble sleeping. Remember to prioritize your sleep hygiene and self-care routines.",
+                "It's okay to not always get a perfect night's sleep. Can you tell me more about what's been keeping you awake?",
+                "Remember that sleep problems are common. Can you share more about what's been impacting your ability to sleep?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about your sleep patterns?",
+                "Have you tried any relaxation techniques before bed?",
+                "What are some things that have helped you sleep better in the past?"
+            ],
+            "context": [
+                "sleep_problems"
+            ],
+            "help_responses": [
+                "I'm here to support you. Would you like to learn some strategies for improving your sleep hygiene?",
+                "I'm here for you. Let's work together to find ways to promote better sleep habits.",
+                "I'm here to listen and help in any way I can. Would you like to talk more about how we can address your sleep problems?"
+            ]
+        },
+        {
+            "tag": "suicidal_feelings",
+            "patterns": [
+                "I'm having suicidal thoughts",
+                "I feel like giving up",
+                "I don't see a reason to keep going"
+            ],
+            "positive_responses": [
+                "I'm sorry to hear that you're experiencing suicidal feelings. It takes a lot of courage to reach out for help. Can you tell me more about what's been going on?",
+                "It's okay to feel overwhelmed and hopeless sometimes. Would you like to talk more about how you're feeling?",
+                "You're not alone in experiencing suicidal thoughts. Can you share more about what's been contributing to these feelings?"
+            ],
+            "negative_responses": [
+                "I'm sorry to hear that you're struggling with suicidal feelings. Please remember that you are valued and your life matters.",
+                "It's okay to feel overwhelmed, but your life is important. Can you tell me more about what's been causing these thoughts?",
+                "Remember that there is hope and help available. Can you share more about what's been contributing to your suicidal feelings?"
+            ],
+            "neutral_responses": [
+                "I see. Can you tell me more about how long you've been feeling this way?",
+                "Have you spoken to anyone else about these thoughts?",
+                "What are some things that have helped you cope with difficult emotions in the past?"
+            ],
+            "context": [
+                "suicidal_feelings"
+            ],
+            "help_responses": [
+                "I'm here to support you. Let's work together to find ways to keep you safe and address your feelings.",
+                "I'm here for you. Would you like to talk about some resources and strategies for coping with suicidal thoughts?",
+                "I'm here to listen and help in any way I can. Would you like to talk more about how we can address your suicidal feelings?"
+            ]
+        }
+    ]
+}
